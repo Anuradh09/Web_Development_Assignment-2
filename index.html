@@ -322,6 +322,23 @@
     </div>
 </footer>
 
+<!-- SCRIPTS: Alert, Trusted badge hide on mobile -->
+<script>
+    function addCart() {
+        alert("Flower Added to Cart");
+    }
 
+
+    function handleBadge() {
+        var badge = document.querySelector(".animate-spin-slow");
+        if (window.innerWidth < 768 && badge) {
+            badge.parentElement.style.display = "none";
+        } else if (badge) {
+            badge.parentElement.style.display = "";
+        }
+    }
+    window.addEventListener("resize", handleBadge);
+    window.addEventListener("DOMContentLoaded", handleBadge);
+</script>
 
 </html>
