@@ -9,8 +9,35 @@
 
 </head>
 
-<body>
+<body class="bg-[#f7f9fb] text-gray-900 min-h-screen">
 
+    <!-- NAVBAR -->
+    <nav class="w-full">
+        <div class="max-w-[1200px] mx-auto flex justify-between items-center px-4 md:px-10 py-4">
+            <!-- Logo/Name -->
+            <div class="flex items-center">
+                <img src="assets/logo.png" alt="logo" class="w-18 h-13 md:w-18 md:h-13 mr-2" />
+            </div>
+            <!-- Menu (desktop) -->
+            <div class="hidden md:flex gap-8 items-center text-base font-medium">
+                <a href="#" class="hover:text-orange-500">Home</a>
+                <div class="hidden md:flex gap-8 items-center text-base font-medium">
+                    <a href="#" class="text-gray-500 hover:text-orange-500 flex items-center transition-colors">
+                        Shop
+                    </a>
+                    <a href="#" class="text-gray-500 hover:text-orange-500 flex items-center transition-colors">
+                        About us
+                    </a>
+                </div>
+                <a href="#" class="hover:text-orange-500 flex items-center">
+                    <svg class="w-6 h-6 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <circle cx="9" cy="21" r="1" />
+                        <circle cx="20" cy="21" r="1" />
+                        <path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6" />
+                    </svg>
+                    Cart ($56)
+                </a>
+            </div>
 </body>
 
 </html>
